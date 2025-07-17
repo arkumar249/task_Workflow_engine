@@ -1,0 +1,19 @@
+{
+  "f61e934a-82fe-480e-812c-20ff7e0cf48b": {
+    "Id": "f61e934a-82fe-480e-812c-20ff7e0cf48b",
+    "WorkflowDefinitionId": "order-process",
+    "CurrentStateId": "shipped",
+    "History": [
+      {
+        "ActionId": "ship",
+        "Timestamp": "2025-07-17T21:16:37.8749889Z"
+      }
+    ]
+  },
+  "c9656460-cb8d-4f18-be99-b86be3454507": {
+    "Id": "c9656460-cb8d-4f18-be99-b86be3454507",
+    "WorkflowDefinitionId": "order-process",
+    "CurrentStateId": "start",
+    "History": []
+  }
+}

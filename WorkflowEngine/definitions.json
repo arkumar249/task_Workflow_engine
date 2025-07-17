@@ -1,0 +1,96 @@
+{
+  "order-process": {
+    "Id": "order-process",
+    "Name": "Order Processing",
+    "States": [
+      {
+        "Id": "start",
+        "Name": "Start",
+        "IsInitial": true,
+        "IsFinal": false,
+        "Enabled": true
+      },
+      {
+        "Id": "shipped",
+        "Name": "Shipped",
+        "IsInitial": false,
+        "IsFinal": false,
+        "Enabled": true
+      },
+      {
+        "Id": "delivered",
+        "Name": "Delivered",
+        "IsInitial": false,
+        "IsFinal": true,
+        "Enabled": true
+      }
+    ],
+    "Actions": [
+      {
+        "Id": "ship",
+        "Name": "Ship Order",
+        "Enabled": true,
+        "FromStates": [
+          "start"
+        ],
+        "ToState": "shipped"
+      },
+      {
+        "Id": "deliver",
+        "Name": "Deliver Order",
+        "Enabled": true,
+        "FromStates": [
+          "shipped"
+        ],
+        "ToState": "delivered"
+      }
+    ]
+  },
+  "order-done": {
+    "Id": "order-done",
+    "Name": "Order Completed",
+    "States": [
+      {
+        "Id": "start",
+        "Name": "Start",
+        "IsInitial": true,
+        "IsFinal": false,
+        "Enabled": true
+      },
+      {
+        "Id": "shipped",
+        "Name": "Shipped",
+        "IsInitial": false,
+        "IsFinal": false,
+        "Enabled": true
+      },
+      {
+        "Id": "delivered",
+        "Name": "Delivered",
+        "IsInitial": false,
+        "IsFinal": true,
+        "Enabled": true
+      }
+    ],
+    "Actions": [
+      {
+        "Id": "ship",
+        "Name": "Ship Order",
+        "Enabled": true,
+        "FromStates": [
+          "start"
+        ],
+        "ToState": "shipped"
+      },
+      {
+        "Id": "deliver",
+        "Name": "Deliver Order",
+        "Enabled": true,
+        "FromStates": [
+          "shipped"
+        ],
+        "ToState": "delivered"
+      }
+    ]
+  }
+}
